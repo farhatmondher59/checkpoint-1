@@ -4,37 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Navbar -->
-    <header>
+    <header class="navbar">
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#work">Work</a></li>
+                <li class="nav-item"><a href="#resume">Resume</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Home Section -->
-    <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>This is my personal web page.</p>
-        <video width="320" height="240" controls>
+    <section id="home" class="section home">
+        <h1 class="title">Welcome to My Portfolio</h1>
+        <video width="320" height="240" controls class="video">
             <source src="devweb.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </section>
 
     <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a web developer with experience in HTML, CSS, and JavaScript.</p>
-        <ul>
+    <section id="about" class="section about">
+        <h2 class="title">About Me</h2>
+        <p class="subtitle">I am a web developer with experience in HTML, CSS, and JavaScript.</p>
+        <ul class="about-list">
             <li>Passionate about coding</li>
             <li>Love learning new technologies</li>
             <li>Enjoy creating interactive websites</li>
@@ -42,10 +45,10 @@
     </section>
 
     <!-- Work Section -->
-    <section id="work">
-        <h2>My Work</h2>
-        <p>Some of my projects:</p>
-        <table border="1">
+    <section id="work" class="section work">
+        <h2 class="title">My Work</h2>
+        <p class="subtitle">Some of my projects:</p>
+        <table class="work-table" border="1">
             <tr>
                 <th>Project</th>
                 <th>Description</th>
@@ -54,41 +57,41 @@
             <tr>
                 <td>Project 1</td>
                 <td>Portfolio website</td>
-                <td><a href="project1.html">View</a></td>
+                <td><a href="project1.html" class="project-link">View</a></td>
             </tr>
             <tr>
                 <td>Project 2</td>
                 <td>Blog website</td>
-                <td><a href="project2.html">View</a></td>
+                <td><a href="project2.html" class="project-link">View</a></td>
             </tr>
         </table>
     </section>
 
     <!-- Resume Section -->
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Download my resume: <a href="resume.pdf">Resume PDF</a></p>
+    <section id="resume" class="section resume">
+        <h2 class="title">Resume</h2>
+        <p class="subtitle">Download my resume: <a href="resume.pdf" download class="resume-link">Resume PDF</a></p>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="submit_form.php" method="post">
+    <section id="contact" class="section contact">
+        <h2 class="title">Contact Me</h2>
+        <form action="submit_form.php" method="post" class="contact-form">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br><br>
+            <input type="text" id="name" name="name" class="input-field"><br><br>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
+            <input type="email" id="email" name="email" class="input-field"><br><br>
 
             <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <textarea id="message" name="message" rows="4" cols="50" class="input-field"></textarea><br><br>
 
-            <input type="submit" value="Send">
+            <input type="submit" value="Send" class="btn">
         </form>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <p>&copy; 2025 My Portfolio. All rights reserved.</p>
     </footer>
 
